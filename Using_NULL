@@ -17,7 +17,7 @@ id	 name
 3	 Engineering
 ...
 
-1.List the teachers who have NULL for their department.
+-1.List the teachers who have NULL for their department.
 
 Query: Select name from teacher where dept is NULL
 
