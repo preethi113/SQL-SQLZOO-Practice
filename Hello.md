@@ -1,3 +1,0 @@
-SELECT Name
-FROM
-Employees
