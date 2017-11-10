@@ -2,6 +2,7 @@ Tables to use for the Queries
 
 teacher
 id|dept|name|phone|mobile
+--|--|--|--|--|--|
 101	 1	    Shrivell	   2753	  07986 555 1234
 102	 1	    Throd	       2754	  07122 555 1920
 103	 1	    Splint	     2293	
