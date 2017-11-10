@@ -56,4 +56,25 @@ ON (teacher.dept=dept.id)
 SELECT COUNT(teacher.id),COUNT(teacher.mobile) 
 FROM teacher
 
---8.
+--8.Use COUNT and GROUP BY dept.name to show each department and the number of staff. Use a RIGHT JOIN to ensure that the Engineering department is listed.
+SELECT dept.name,COUNT(teacher.dept) 
+FROM dept 
+LEFT JOIN teacher 
+ON (teacher.dept=dept.id) group by dept.name
+
+--9.Use CASE to show the name of each teacher followed by 'Sci' if the teacher is in dept 1 or 2 and 'Art' otherwise.
+SELECT teacher.name,
+CASE 
+WHEN dept IS NULL THEN 'Art' 
+ELSE 'Sci' 
+END AS dept_type
+FROM teacher
+
+--10.Use CASE to show the name of each teacher followed by 'Sci' if the teacher is in dept 1 or 2, show 'Art' if the teacher's dept is 3 and 'None' otherwise.
+SELECT name,
+CASE
+WHEN dept IN(1,2) THEN 'Sci'
+WHEN dept=3 THEN'Art'
+ELSE 'None'
+END
+FROM teacher
