@@ -1,1 +1,3 @@
-
+SELECT Name
+FROM
+Employees
