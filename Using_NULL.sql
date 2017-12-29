@@ -1,4 +1,4 @@
-
+Refer using_null_table.png for table image.
 
 --1.List the teachers who have NULL for their department.
 SELECT name 
